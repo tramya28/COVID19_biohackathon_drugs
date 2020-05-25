@@ -31,7 +31,7 @@ Since the classification of COVID-19 as a global pandemic, there have been many 
 The World Health Organization (WHO) defines the Coronavirus disease (COVID-19) as an infectious disease caused by a newly discovered coronavirus and declared it a pandemic on March 11, 2020 [@WorldHealthOrganization]. As of May 11, 2020, 4,148,034 cases were confirmed worldwide with 284,124 deaths and 1,428,161 cases recovered. Social media platforms like Twitter and Reddit contain an abundance of text data that can be utilized for research. Over the last decade, Twitter has proven to be a valuable resource during disasters for many-to-many crisis communication [@Earle:2010] [@Zou:2018] [@Alam:2018]. Recently, Several works [@Gao:2020] [@Lu:2020] [@Sanders:2020]  have provided insights on the treatment options and drug usages for COVID-19. 
 
 
-We utilized the largest available COVID-19 dataset [@Banda:2020] curated using a Social Media Mining Toolkit [@Tekumalla:2020]. This dataset consists of tweets related to COVID-19 from January 1, 2020. Version 9 was utilized for our experiments since it was the latest version at the time of experiments. We annotated ~283 million tweets using the drug dictionary [@Tekumalla:2019] compiled from RxNorm {[@NationalLibraryofMedicine:2008] with 19,643 terms and validated in [@Tekumalla:2019] and [@TekumallaandBanda:2020]. 
+We utilized the largest available COVID-19 dataset [@Banda:2020] curated using a Social Media Mining Toolkit [@Tekumalla:2020]. This dataset consists of tweets related to COVID-19 from January 1, 2020. Version 9 was utilized for our experiments since it was the latest version at the time of experiments. We annotated ~283 million tweets using the drug dictionary [@Tekumalla:2019] compiled from RxNorm [@NationalLibraryofMedicine:2008] with 19,643 terms and validated in [@Tekumalla:2019] and [@TekumallaandBanda:2020]. 
 
 
 # Methods
@@ -43,6 +43,7 @@ We employed two different methodologies, a machine learning approach called QMis
 The second methodology utilizes keyboard layout distance for generating the misspellings. For each term, each alphabet is replaced with the closest alphabet on the QWERTY keyboard. This process is recursive and ceases when it has looped through every alphabet in the term. For example, the term cocaine has 68 misspelled terms which vary from xocaine to cocaint. After eliminating the common vocabulary and duplicates, a total of 15,696 terms are identified as misspelled terms for this methodology. We annotated the clean dataset utilizing the misspelled terms from the methodologies. Table 1 summarizes the results. Overlap between QMisSpell and the Keyboard Layout generator is 4.9%. 33 terms were common between the two misspelled dictionaries.
 
 Table 1. Term annotation results
+
 | Dictionary | Total number of terms |Total annotated terms |
 | -------- | -------- | -------- |
 | RxNorm drug Dictionary | 19,643 | 768,752 |
@@ -72,9 +73,9 @@ Table 2. Most frequent drugs found using the drug dictionary.
 Not unexpectedly, Hydroxychloroquine was the most tweeted drug found on the dataset with chloroquine coming in as close second, as shown on Table 2. Interestingly enough, hydroxychloroquine was not the most misspelled word, chloroquine was, as we can see on Table 3.
 
 Table 3. Most frequent misspelled drugs found using the two methods
-| Keyboard Layout Method | | | QMisSpell Method | |
+
+| Keyboard Layout Method Drug Name | Keyboard Layout Method Frequency | QMisSpell Method Drug Name | QMisSpell Method Frequency  |
 | -------- | -------- | -------- | -------- | 
-| Drug Name | Frequency | Drug Name  | Frequency |
 | chloroquine | 16,361 | hydroxychloroquine | 6,650 |
 | vitamin a | 12,094 | allegra | 6,266 |
 | agar | 8,933 | meted | 5,135 |
