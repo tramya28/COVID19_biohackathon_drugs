@@ -1,29 +1,26 @@
 ---
-title: 'Characterization of potential drug treatments for COVID-19 using social media data and machine learning'
+title: 'Characterization of Potential Drug Treatments for COVID-19 using Twitter'
 tags:
   - COVID-19
   - Machine Learning
-  - NLP
   - Twitter
 authors:
   - name: Ramya Tekumalla
     orcid: 0000-0002-1606-4856
     affiliation: 1
-
-  - name: Juan Banda 
+  - name: Juan M Banda
     orcid: 0000-0001-8499-824X
     affiliation: 1
 affiliations:
  - name: Georgia State University, Atlanta, Georgia, USA
    index: 1
- 
 date: 22 May 2020
 bibliography: paper.bib
 ---
 
 # Abstract
 
-Since the classification of COVID-19 as a global pandemic, there have been many attempts to treat and contain the virus. Although there is no specific antiviral treatment recommended for COVID-19, there are several drugs that can potentially help with symptoms. In this work, we mined a large twitter dataset of 280 million tweets of COVID-19 chatter to identify discourse around potential treatments. While seemingly a straightforward task, due to the informal nature of language use in Twitter, we demonstrate the need of machine learning methods to aid in this task. By applying these methods we are able to recover almost 21% additional data than with traditional methods.  
+Since the classification of COVID-19 as a global pandemic, there have been many attempts to treat and contain the virus. Although there is no specific antiviral treatment recommended for COVID-19, there are several drugs that can potentially help with symptoms. In this work, we mined a large twitter dataset of 280 million tweets of COVID-19 chatter to identify discourse around potential treatments. While seemingly a straightforward task, due to the informal nature of language use in Twitter, we demonstrate the need of machine learning methods to aid in this task. By applying these methods we are able to recover almost 21% additional data than with traditional methods.
 
 # Introduction 
 
@@ -105,3 +102,4 @@ This research utilized the largest available COVID-19 dataset to identify the dr
 This research was developed during COVID-19 Biohackathon April 5-11 2020. We thank the organizers for coordinating the virtual hackathon during the COVID-19 crisis. 
 
 # References
+
